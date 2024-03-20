@@ -1,0 +1,52 @@
+/* App.css */
+
+.cart-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 0 0 calc(50% - 10px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.checkout-button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
