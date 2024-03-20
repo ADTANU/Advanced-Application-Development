@@ -1,0 +1,113 @@
+/* venuePage.css */
+
+.venue-page {
+  background-color: white; /* Light blue background */
+  padding: 20px;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-fields input,
+.input-fields select {
+  width: 30%; /* Adjust input field width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-fields select {
+  /* Adjust select box height to match input field */
+  height: 44px;
+  /* Add some space on the right side of select box */
+  margin-right: 10px;
+}
+
+.input-fields input::placeholder,
+.input-fields select option {
+  color: #999; /* Placeholder text color */
+}
+
+.input-fields input:focus,
+.input-fields select:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #D2B48C; /* Change border color on focus */
+}
+
+.venue-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  row-gap: 5px;
+  column-gap: 100px;
+}
+
+.venue-card {
+  background-color: #fff; /* White background for each card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Two cards in a row with some spacing */
+  margin-bottom: 20px;
+}
+
+.venue-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Style the venue card details */
+.venue-card h3 {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.venue-card p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+/* Style the 'Book' button */
+.venue-card button {
+  background-color: #D2B48C; /* Beige background color */
+  width: 100px; /* Button width */
+  height: 40px; /* Button height */
+  border: none; /* Remove button border */
+  font-size: 18px; /* Button font size */
+  margin-left: 19rem; /* Adjust button margin */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.venue-card button:hover {
+  background-color: #D2B48C; /* Change background color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .input-fields input,
+  .input-fields select {
+    width: 100%; /* Make input fields full width on smaller screens */
+    margin-bottom: 10px; /* Add some space between input fields */
+  }
+
+  .venue-cards {
+    column-gap: 20px; /* Reduce column gap for better layout on smaller screens */
+  }
+
+  .venue-card {
+    width: 100%; /* Make venue cards full width on smaller screens */
+  }
+
+  .venue-card button {
+    margin-left: auto; /* Center align button on smaller screens */
+    margin-right: auto; /* Center align button on smaller screens */
+  }
+}
