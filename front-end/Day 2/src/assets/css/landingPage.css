@@ -1,0 +1,317 @@
+/* LandingPage.css */
+
+/* Reset styles for body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Container for landing page */
+.landing-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #ffffff; /* Set your desired background color */
+}
+
+/* Styling for event image */
+.event-image {
+  margin-top: -2rem;
+  width: 100%;
+  max-height: 950px;
+  object-fit: cover;
+  background-attachment: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateZ(-1px);
+}
+
+/* Content styling */
+.content {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20rem;
+}
+
+/* Contact styling */
+.contact {
+  margin-bottom: -300px;
+}
+
+/* New card style */
+.new-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.new-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.new-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.new-card:hover {
+  transform: translateY(-10px);
+}
+
+.new-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #D2B48C;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.new-card:hover .overlay {
+  opacity: 1;
+}
+
+.new-card .title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.new-card .description {
+  font-size: 1rem;
+}
+
+/* Styling for the gallery text */
+.gallery-text {
+  color: #D2B48C;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  font-size: 20px;
+}
+
+/* Styling for the box container */
+.box-container-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* Styling for individual boxes */
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #D2B48C;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for box images */
+.box img {
+  width: 100%;
+  height: auto;
+  margin-top: -30px;
+}
+
+/* Styling for box titles */
+.box h2 {
+  font-size: 24px;
+  color: gray;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Styling for box links */
+.box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styling for box links on hover */
+.box a:hover {
+  text-decoration: none;
+  color: #D2B48C;
+}
+
+/* Styling for other sections */
+
+.about-image h2 {
+  font-size: 24px;
+  color: #D2B48C;
+  margin-top: 20px;
+}
+
+.about-image {
+  position: relative;
+  margin-top: 50px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}
+
+.aboutc-image {
+  position: relative;
+  margin-top: 50px;
+}
+
+.aboutc-image img {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.6;
+}
+
+.about-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+  padding: 10px;
+}
+
+.about-text h2 {
+  font-size: 100px;
+  margin-bottom: 10px;
+  color: #D2B48C;
+  font-family: monospace;
+}
+
+.aboutc-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+  padding: 20px;
+}
+
+.aboutc-text h2 {
+  font-size: 100px;
+  margin-bottom: 10px;
+  color: #D2B48C;
+  font-family: monospace;
+}
+
+.about-image p {
+  color: gray;
+  font-size: 25px;
+  line-height: 1.6;
+  font-family: monospace;
+  text-align: unset;
+}
+
+.welcome-overview {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.welcome-overview img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.welcome-overview-content {
+  flex-grow: 1;
+}
+
+.welcome-overview h2 {
+  font-size: 35px;
+  color: #D2B48C;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.welcome-overview p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: gray;
+  font-family: monospace;
+}
+
+/* serviceCards.css */
+
+.service-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.service-card {
+  background-color: #f9f9f9;
+  padding: 60px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  font-family: monospace;
+}
+
+.service-card i {
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #a36b21;
+}
+
+.service-card h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #D2B48C;
+}
+
+.service-card p {
+  font-size: 20px;
+  color: gray;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
