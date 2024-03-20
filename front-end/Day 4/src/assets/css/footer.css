@@ -1,0 +1,60 @@
+.footer-section {
+  background: #ad8b5f;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #D2B48C;
+  padding: 5px 0;
+  text-align: center; /* Adjust padding as needed */
+}
+
+.single-cta {
+  display: inline-block; /* Display items inline */
+  margin-right: 20px; 
+  margin: 0 20px;/* Adjust margin between items */
+}
+
+.single-cta i {
+  color: #b26c0f;
+  font-size: 35px;
+  margin-right: 20px; /* Adjust margin between icon and text */
+}
+
+.cta-text {
+  display: inline-block; /* Display items inline */
+  vertical-align: middle;
+  font-family: "Sarpanch", sans-serif;
+  
+  /* Align items vertically */
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  vertical-align: middle;
+  
+  margin: 0; /* Remove margin to avoid unwanted spacing */
+}
+
+.cta-text span {
+  color: #7e551f;
+  font-size: 20px;
+}
+.copyright-area {
+  background: #D2B48C;
+  padding: 10px 0;
+  text-align: center; 
+  font-family: "Sarpanch", sans-serif;
+  /* Center align the text */
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 20px;
+  color: #795220;
+  font-family: "Sarpanch", sans-serif;
+
+}
+
